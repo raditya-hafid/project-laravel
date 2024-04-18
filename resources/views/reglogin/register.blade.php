@@ -5,7 +5,7 @@
 <div class="row justify-content-center">
     <div class="col-md-4">
         <main class="form-registration">
-            <h1 class="h3 mb-3 fw-normal">Sign up</h1>
+            <h1 class="h3 mb-3 fw-normal">Register</h1>
             <form action="/register" method="POST">
                 @csrf
               <div class="form-floating">
@@ -48,10 +48,10 @@
                 @enderror
               </div>
           
-              <button class="w-100 btn btn-lg btn-primary mt-4" type="submit">Sign up</button>
+              <button class="w-100 btn btn-lg btn-primary mt-4" type="submit">Register</button>
             </form>
             <small class="text-muted d-block text-center pt-1">
-                Klik <a href="/login">disini</a> untuk sign in!
+                Click <a href="/login">Here</a> to Login!
             </small>
             
         </main>

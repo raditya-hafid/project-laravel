@@ -21,7 +21,7 @@
         
 
         <main class="form-signin">
-            <h1 class="h3 mb-3 fw-normal">Sign in</h1>
+            <h1 class="h3 mb-3 fw-normal">Login</h1>
             <form action="/login" method="POST">
               @csrf
               <div class="form-floating">
@@ -48,10 +48,10 @@
           
               <div class="checkbox mb-3">
               </div>
-              <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+              <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
             </form>
             <small class="text-muted d-block text-center pt-1">
-                Klik <a href="/register">disini</a> untuk sign up!
+                Click <a href="/register">Here</a> to Register!
             </small>
         </main>
     </div>
