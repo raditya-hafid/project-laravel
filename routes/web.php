@@ -38,20 +38,21 @@ Route::get('/posts/{post:slug}' , [PostController::class, 'show']);
 
 Route::get('/categories/', function(){
     return view('categories',[
-        'title'=>'Categories',
+        'judul'=>'Categories',
         'categories'=>category::all()
     ]);
 });
 
 Route::get('/authors/', function(){
     return view('authors',[
-        'title'=>'Authors',
+        'judul'=>'Authors',
         'authors'=>User::all()
     ]);
 });
 
 Route::get('/categories/{category:slug}', function(category $category){
     return view('category',[
+        "judul" =>"Post by category: $category->name",
         "title" =>"Post by category: $category->name",
         "posts" => $category->posts->load(["category","author"]) ,
         "category"=>$category->name
@@ -62,6 +63,7 @@ Route::get('authors/{user:username}', function(User $user){
     return view(
         'author',
         [
+            'judul'=>'User',
           'title'=>'User',
           'posts'=>$user->posts->load('category','author'), //lazy eager di route model bainding😂
           'author'=>$user->name

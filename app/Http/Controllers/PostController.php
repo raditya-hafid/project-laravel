@@ -31,6 +31,7 @@ class PostController extends Controller
         
         return view('posts',[
             "title"=>"All Photo" . $title,
+            "judul"=> "InterPhoto",
             
             "posts"=>post::latest()->filter(request(['Cari', 'category', 'author']))->paginate(6), //eager loding tambahkan = with()
             
@@ -39,7 +40,7 @@ class PostController extends Controller
 
     public function show(post $post){
         return view('post',[
-            "title"=>"post",
+            "judul"=>"post",
             "pos"=>$post
         ]);
         

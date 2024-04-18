@@ -13,10 +13,10 @@
             <a class="nav-link {{ ($title === "about") ? 'active' : ''  }}" href="/about">About</a>
           </li> --}}
           <li class="nav-item">
-            <a class="nav-link {{ ($title === "blog") ? 'active' : ''  }}" href="/blog">Home</a>
+            <a class="nav-link {{ ($judul === "blog") ? 'active' : ''  }}" href="/blog">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {{ ($title === "categories") ? 'active' : ''  }}" href="/categories">Categories</a>
+            <a class="nav-link {{ ($judul === "categories") ? 'active' : ''  }}" href="/categories">Categories</a>
           </li>
         </ul>
 
@@ -41,7 +41,7 @@
           </li>
           @else
           <li class="nav-item">
-            <a href="/login" class="nav-link {{ ($title==='login')? 'active' : '' }}">Login</a>
+            <a href="/login" class="nav-link {{ ($judul==='login')? 'active' : '' }}">Login</a>
           </li>
           @endauth
         </ul>

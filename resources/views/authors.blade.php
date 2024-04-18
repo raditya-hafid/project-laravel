@@ -3,7 +3,7 @@
 @section('container')
     <div class="mb-5">
         <h1>
-            Post Category : {{ $title }}
+            Post Category : {{ $judul }}
         </h1>
     </div>
 

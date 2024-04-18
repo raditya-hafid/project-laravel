@@ -11,7 +11,7 @@
     {{-- css --}}
     <link rel="stylesheet" href="/css/style.css">
 
-    <title>{{ $title }}</title>
+    <title>{{ $judul }}</title>
   </head>
   <body>
 
