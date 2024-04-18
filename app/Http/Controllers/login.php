@@ -12,7 +12,7 @@ class login extends Controller
     public function index()
     {
         return view('reglogin.login',[
-            'title'=>'Sign in',
+            'judul'=>'Login',
         ]);
     }
 
@@ -53,7 +53,7 @@ class login extends Controller
     public function register()
     {
         return view('reglogin.register',[
-            'title'=>'Sign up',
+            'judul'=>'Registration',
         ]);
     }
 
