@@ -28,7 +28,7 @@ class login extends Controller
             return redirect()->intended('/dash');
         }
 
-        return back()->with('gagal' , 'Sign In Gagal!!');
+        return back()->with('gagal' , 'Login Failed!!');
 
         
     }
@@ -71,6 +71,6 @@ class login extends Controller
 
         User::create($validatedData); //cara pertama langsung ini
         // $request->session()->flash('success','Berhasil Mendaftar!!'); //error
-        return redirect('/login')->with('success','Berhasil Mendaftar!!');
+        return redirect('/login')->with('success','Successfully Redistered!!');
     }
 }
